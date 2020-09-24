@@ -1,15 +1,48 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+/*BOTON DE SCROLL ARRIBA*/
+.scroll-to-top{
+  text-decoration: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+  font-size: 36px;
+  color: #555;
+}
+.scroll-to-top:hover{
+  text-decoration:none;
+  color: #000;
+}
+/*BOTON DE SCROLL ARRIBA*/
+/*BOTON WHATSAPP*/
+.redes-flotantes {
+position: fixed;
+right: 8px;
+top: 75%;
+z-index: 20;
+}
+.redes-flotantes img {
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+.redes-flotantes img:hover {
+-moz-transform: scale(1.1) rotate(6deg);
+-webkit-transform: scale(1.1) rotate(6deg);
+-o-transform: scale(1.1) rotate(6deg);
+-ms-transform: scale(1.1) rotate(6deg);
+transform: scale(1.1) rotate(6deg);
+}
+/*BOTON WHATSAPP*/
+/* Colores*/
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10133,47 +10166,3 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-
-/*BOTON DE SCROLL ARRIBA*/
-.scroll-to-top{
-  text-decoration: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: none;
-  font-size: 36px;
-  color: #555;
-}
-.scroll-to-top:hover{
-  text-decoration:none;
-  color: #000;
-}
-/*BOTON DE SCROLL ARRIBA*/
-/*BOTON WHATSAPP*/
-.redes-flotantes {
-position: fixed;
-right: 8px;
-top: 75%;
-z-index: 20;
-}
-.redes-flotantes img {
-float: right; clear: right;
- margin: 5px;
--moz-transform: scale(.8) ;
--webkit-transform: scale(.8) ;
--o-transform: scale(.8) ;
--ms-transform: scale(.8) ;
-transform: scale(.8) ;
--webkit-transition: all .2s ease-in-out;
--moz-transition: all .2s ease-in-out;
--o-transition: all .2s ease-in-out;
-transition: all .2s ease-in-out;
-}
-.redes-flotantes img:hover {
--moz-transform: scale(1.1) rotate(6deg);
--webkit-transform: scale(1.1) rotate(6deg);
--o-transform: scale(1.1) rotate(6deg);
--ms-transform: scale(1.1) rotate(6deg);
-transform: scale(1.1) rotate(6deg);
-}
-/*BOTON WHATSAPP*/

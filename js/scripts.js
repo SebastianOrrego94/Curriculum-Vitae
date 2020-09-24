@@ -1,10 +1,26 @@
-/*!
-    * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-    */
+    //BOTON PARA SUBIR AL TOP-PAGE
+    (function($){
+    $(document).ready(
+      function(){
+        // Comprobar si estamos, al menos, 400 px por debajo de la posición top
+        // para mostrar o esconder el botón
+        $(window).scroll(function(){
+          if ( $(this).scrollTop() > 400 ) {
+            $('.scroll-to-top').fadeIn();
+          } else {
+            $('.scroll-to-top').fadeOut();
+          }
+        });
+        // al hacer click, animar el scroll hacia arriba
+        $('.scroll-to-top').click( function(e) {
+          e.preventDefault();
+          $('html, body').animate( {scrollTop : 0}, 800 );
+        });
+      });
+    })(jQuery);
+////////////////////////////////////////////////////////
     (function ($) {
-    "use strict"; // Start of use strict
+    "use strict"; // Inicio de uso estricto
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
@@ -39,28 +55,4 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
-})(jQuery); // End of use strict
-
-
-
-
-//BOTON PARA SUBIR AL TOP-PAGE
-(function($){
-$(document).ready(
-  function(){
-    // Comprobar si estamos, al menos, 400 px por debajo de la posición top
-    // para mostrar o esconder el botón
-    $(window).scroll(function(){
-      if ( $(this).scrollTop() > 400 ) {
-        $('.scroll-to-top').fadeIn();
-      } else {
-        $('.scroll-to-top').fadeOut();
-      }
-    });
-    // al hacer click, animar el scroll hacia arriba
-    $('.scroll-to-top').click( function(e) {
-      e.preventDefault();
-      $('html, body').animate( {scrollTop : 0}, 800 );
-    });
-  });
-})(jQuery);
+})(jQuery); // Fin del uso estricto
